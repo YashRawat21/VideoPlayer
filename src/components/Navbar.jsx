@@ -3,6 +3,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { BsYoutube } from "react-icons/bs";
 import { FaSearch } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
+import { FaMicrophone } from "react-icons/fa";
+import { BsCameraVideo } from "react-icons/bs";
+import { BsBell } from "react-icons/bs";
 
 import { Link } from 'react-router-dom';
 const Navbar = () => {
@@ -27,7 +30,7 @@ const Navbar = () => {
                     <FaSearch className='text-xl'/>  
                 </div>
                 <input type='text' className='w-96 bg-zinc-900 focus:outline-none border-none '/>
-            {/* <AiOutlineClose className=''/> */}
+          
             <AiOutlineClose  className='text-xl cursor-pointer'/>
             </div>
             <button className='h-10 w-16 flex items-center justify-center bg-zinc-800'>
@@ -35,6 +38,17 @@ const Navbar = () => {
             </button>
          </div>
         </form>
+        <div className='text-xl p-3 bg-zinc-900 rounded-full'>
+         <FaMicrophone />
+        </div>
+        <div className='flex gap-5 items-center text-xl'>
+          <BsCameraVideo/>
+          <div className='relative'>
+          <BsBell/>
+          <span className='absolute bottom-2 left-2 text-xs bg-red-500 rounded-full px-1' ></span>
+          </div>
+          <img src='https://pbs.twimg.com/profile_images/1678792762853040128/zAZMas9T_400x400.jpg' className='h-8 w-8 rounded-full' alt='account-owner'/>
+        </div>
        </div>
     </div>
   )
