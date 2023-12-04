@@ -45,7 +45,7 @@ const Navbar = () => {
           <BsCameraVideo/>
           <div className='relative'>
           <BsBell/>
-          <span className='absolute bottom-2 left-2 text-xs bg-red-500 rounded-full px-1' ></span>
+          <span className='absolute bottom-2 left-2 text-xs bg-red-500 rounded-full px-1' >9+</span>
           </div>
           <img src='https://pbs.twimg.com/profile_images/1678792762853040128/zAZMas9T_400x400.jpg' className='h-8 w-8 rounded-full' alt='account-owner'/>
         </div>
